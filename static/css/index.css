@@ -26,21 +26,20 @@ body { font-family: 'Noto Sans', sans-serif; color: var(--muted); background: #f
 .publication-authors a:hover { text-decoration: underline; }
 .publication-affils { margin-top: 0.35rem; }
 .equal-note { font-family: 'Google Sans', 'Noto Sans', sans-serif; font-style: italic; color: #4a4a4a; font-size: 1.05rem; margin-top: 0.5rem; }
-/* Workshop paper award beneath the author affiliations. */
-.project-award { margin-top: 0.85rem; font-family: 'Google Sans', 'Noto Sans', sans-serif; }
-.project-award a {
-  display: inline-block;
-  padding: 0.48rem 0.95rem;
-  border: 1px solid #e7d7a9;
-  border-radius: 999px;
-  background: #fff8e9;
-  color: #775615;
+/* Venue and award lines, with the Best Paper honor emphasized in red. */
+.project-venue,
+.project-award {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.45;
-  text-decoration: none;
+  line-height: 1.4;
+  font-size: clamp(1.08rem, 2.1vw, 1.75rem);
 }
-.project-award a:hover { background: #fff2d5; color: #5f430a; text-decoration: underline; }
+.project-venue { margin-top: 0.85rem; color: #171717; }
+.project-award { margin-top: 0.18rem; }
+.project-award a { color: #171717; text-decoration: none; }
+.project-award-venue { color: #171717; }
+.project-award-label { color: #e60000; }
+.project-award a:hover { text-decoration: underline; }
 .publication-links { margin-top: 1.2rem; }
 .link-block { display: inline-block; margin: 0.3rem 0.25rem; }
 .link-block .button { font-weight: 600; }
